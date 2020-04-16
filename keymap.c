@@ -12,9 +12,6 @@ enum custom_keycodes {
   
 };
 
-    // KC_AUDIO_VOL_DOWN,KC_AUDIO_VOL_UP,
-    // KC_AUDIO_MUTE,
-
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_ergodox(
     // left
@@ -23,8 +20,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_LCTRL,         KC_A,         KC_S,       KC_D,       KC_F,       KC_G,
     KC_LSHIFT,        KC_Z,         KC_X,       KC_C,       KC_V,       KC_B,       KC_NO,
     MO(4),            KC_CAPSLOCK,  KC_LALT,    KC_LGUI,    MO(2),
-    KC_NO,            KC_NO, // スクリーンショット
-    KC_NO, //スクリーンショット
+    KC_NO,            KC_NO,
+    KC_NO,
     LT(3, KC_SPACE),  KC_NO,        KC_NO,
     // right
     KC_NO,            KC_NO,        KC_NO,      KC_NO,       KC_NO,             KC_NO,        KC_NO,
