@@ -12,20 +12,23 @@ enum custom_keycodes {
   
 };
 
+    // KC_AUDIO_VOL_DOWN,KC_AUDIO_VOL_UP,
+    // KC_AUDIO_MUTE,
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_ergodox(
     // left
     KC_NO,            KC_NO,        KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,
-    KC_TAB,           KC_Q,         KC_W,       KC_E,       KC_R,       KC_T,       KC_NO,
+    KC_TAB,           KC_Q,         KC_W,       KC_E,       KC_R,       KC_T,       KC_LANG2,
     KC_LCTRL,         KC_A,         KC_S,       KC_D,       KC_F,       KC_G,
     KC_LSHIFT,        KC_Z,         KC_X,       KC_C,       KC_V,       KC_B,       KC_NO,
     MO(4),            KC_CAPSLOCK,  KC_LALT,    KC_LGUI,    MO(2),
-    KC_NO,            KC_NO,
-    KC_NO,
+    KC_NO,            KC_NO, // スクリーンショット
+    KC_NO, //スクリーンショット
     LT(3, KC_SPACE),  KC_NO,        KC_NO,
     // right
     KC_NO,            KC_NO,        KC_NO,      KC_NO,       KC_NO,             KC_NO,        KC_NO,
-    KC_NO,            KC_Y,         KC_U,       KC_I,        KC_O,              KC_P,         KC_BSPACE,
+    KC_LANG1,            KC_Y,         KC_U,       KC_I,        KC_O,              KC_P,         KC_BSPACE,
                       KC_H,         KC_J,       KC_K,        KC_L,              KC_SCOLON,    KC_ENTER,
     KC_NO,            KC_N,         KC_M,       KC_COMMA,    KC_DOT,            KC_SLASH,     KC_QUOTE,
                                     MO(1),      KC_RGUI,     RGUI(KC_SPACE),    RSFT(KC_TAB), KC_TAB,
