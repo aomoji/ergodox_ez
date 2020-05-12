@@ -91,7 +91,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_NO,   KC_TRANSPARENT, KC_TRANSPARENT,
     // right
     KC_TRANSPARENT,   KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,  KC_TRANSPARENT, KC_TRANSPARENT,KC_TRANSPARENT,
-    KC_TRANSPARENT,   KC_LANG1,       LALT(KC_LEFT),  LALT(KC_RIGHT),  KC_NO,          KC_NO,         KC_TRANSPARENT,
+    KC_TRANSPARENT,   KC_LANG1,       LALT(KC_LEFT),  LALT(KC_RIGHT),  RGUI(KC_SPACE), KC_NO,         KC_TRANSPARENT,
                       KC_LEFT,        KC_DOWN,        KC_UP,           KC_RGHT,        KC_NO,         KC_TRANSPARENT,
     KC_TRANSPARENT,   KC_NO,          RSFT(KC_TAB),   KC_TAB,          KC_NO,          KC_NO,         KC_NO,
                                       KC_NO,          KC_TRANSPARENT,  KC_NO,          KC_NO,         KC_NO,
