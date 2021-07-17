@@ -79,11 +79,11 @@ XXXXXXX, XXXXXXX, _______, _______, XXXXXXX,                                    
 ),
 
 [3] = LAYOUT_ergodox_pretty(
-_______,     _______,    _______,          _______,       _______,       _______, _______,      _______, _______, _______                   , _______       , _______       , _______, _______,
-_______,  LCTL(KC_1), LCTL(KC_2),       LCTL(KC_3),    LCTL(KC_4),    LCTL(KC_5), _______,      _______, _______, LALT(KC_LEFT)             , LALT(KC_RIGHT), RGUI(KC_SPACE), KC_F14 , KC_F15 ,
-_______, KC__VOLDOWN,  KC__VOLUP,    KC_AUDIO_MUTE, LGUI(KC_RBRC),       XXXXXXX,                        KC_LEFT, KC_DOWN                   , KC_UP         , KC_RGHT       , XXXXXXX, _______,
-_______,     _______,    _______, LGUI(LSFT(KC_C)),       XXXXXXX, LGUI(KC_LBRC), _______,      _______, XXXXXXX, LCTL(RSFT(LGUI_T(KC_TAB))), LCTL(KC_TAB)  , XXXXXXX       , XXXXXXX, XXXXXXX,
-XXXXXXX,     XXXXXXX,    _______,          _______,       XXXXXXX,                                                XXXXXXX                   , _______       , XXXXXXX       , XXXXXXX, RESET  ,
+_______,     _______,    _______,          _______,       _______,       _______, _______,      _______, _______, _______           , _______       , _______       , _______, _______,
+_______,  LCTL(KC_1), LCTL(KC_2),       LCTL(KC_3),    LCTL(KC_4),    LCTL(KC_5), _______,      _______, _______, LALT(KC_LEFT)     , LALT(KC_RIGHT), RGUI(KC_SPACE), KC_F14 , KC_F15 ,
+_______, KC__VOLDOWN,  KC__VOLUP,    KC_AUDIO_MUTE, LGUI(KC_RBRC),       XXXXXXX,                        KC_LEFT, KC_DOWN           , KC_UP         , KC_RGHT       , XXXXXXX, _______,
+_______,     _______,    _______, LGUI(LSFT(KC_C)),       XXXXXXX, LGUI(KC_LBRC), _______,      _______, XXXXXXX, LCTL(RSFT(KC_TAB)), LCTL(KC_TAB)  , XXXXXXX       , XXXXXXX, XXXXXXX,
+XXXXXXX,     XXXXXXX,    _______,          _______,       XXXXXXX,                                                XXXXXXX           , _______       , XXXXXXX       , XXXXXXX, RESET  ,
 
                                                                          _______, _______,      _______, _______,
                                                                                   _______,      _______,
