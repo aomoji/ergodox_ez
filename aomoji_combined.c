@@ -87,9 +87,9 @@ _______, _______, _______,            _______,       _______,       _______, ___
 _______, _______, _______, LCTL(RSFT(KC_TAB)),  LCTL(KC_TAB),       _______, _______,      _______, _______, LALT(KC_LEFT), LALT(KC_RIGHT), RGUI(KC_SPACE), _______, _______         ,
 _______, _______, _______,            _______, LGUI(KC_RBRC),       _______,                        KC_LEFT, KC_DOWN      , KC_UP         , KC_RGHT       , XXXXXXX, _______         ,
 _______, _______, _______,            _______,       _______, LGUI(KC_LBRC), _______,      _______, XXXXXXX, XXXXXXX      , XXXXXXX       , XXXXXXX       , XXXXXXX, XXXXXXX         ,
-  RESET, XXXXXXX, _______,            _______,       XXXXXXX,                                                XXXXXXX      , _______       , XXXXXXX       , XXXXXXX, LCTL(LGUI(KC_Q)),
+XXXXXXX, XXXXXXX, _______,            _______,       XXXXXXX,                                                XXXXXXX      , _______       , XXXXXXX       , XXXXXXX, LCTL(LGUI(KC_Q)),
 
-                                                                    _______, _______,      _______, _______,
+                                                                    _______, RESET,      _______, _______,
                                                                              _______,      _______,
                                                      XXXXXXX,       _______, _______,      _______, _______, XXXXXXX
 ),
