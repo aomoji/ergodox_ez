@@ -1,4 +1,3 @@
-
 #include "ergodox_ez.h"
 #include "debug.h"
 #include "action_layer.h"
@@ -12,6 +11,9 @@ enum custom_keycodes {
   RGB_SLD,
   
 };
+
+
+
 
 
 
@@ -45,15 +47,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      */
 
 [0] = LAYOUT_ergodox_pretty(
-        KC_ESC, LCTL(KC_1), LCTL(KC_2), LCTL(KC_3),     LCTL(KC_4),             LCTL(KC_5),           KC_F14,      KC_F15       , LCTL(KC_6), LCTL(KC_7)    , LCTL(KC_8), LCTL(KC_9), LCTL(KC_0), XXXXXXX         ,
-LGUI_T(KC_TAB),       KC_Q,       KC_W,       KC_E,           KC_R,                   KC_T,          KC_PGUP,      KC_HOME      , KC_Y      , KC_U          , KC_I      , KC_O      , KC_P      , KC_BSPACE       ,
-      KC_LCTRL,       KC_A,       KC_S,       KC_D,           KC_F,                   KC_G,                                       KC_H      , KC_J          , KC_K      , KC_L      , KC_SCOLON , KC_ENTER        ,
-     KC_LSHIFT,       KC_Z,       KC_X,       KC_C,           KC_V,                   KC_B,          KC_PGDN,      KC_END       , KC_N      , KC_M          , KC_COMMA  , KC_DOT    , KC_SLASH  , SFT_T(KC_QUOTE) ,
-       XXXXXXX,    XXXXXXX,    KC_LALT,    KC_LGUI,          MO(2),                                                                           MO(1)         , KC_RGUI   , KC_RALT   , XXXXXXX   , LCTL(LGUI(KC_Q)),
+        KC_ESC, LCTL(KC_1), LCTL(KC_2), LCTL(KC_3),     LCTL(KC_4),             LCTL(KC_5),           KC_F14,      KC_F15       , LCTL(KC_6), LCTL(KC_7)    , LCTL(KC_8), LCTL(KC_9), LCTL(KC_0), XXXXXXX        ,
+LGUI_T(KC_TAB),       KC_Q,       KC_W,       KC_E,           KC_R,                   KC_T,          KC_PGUP,      KC_HOME      , KC_Y      , KC_U          , KC_I      , KC_O      , KC_P      , KC_BSPACE      ,
+      KC_LCTRL,       KC_A,       KC_S,       KC_D,           KC_F,                   KC_G,                                       KC_H      , KC_J          , KC_K      , KC_L      , KC_SCOLON , KC_ENTER       ,
+     KC_LSHIFT,       KC_Z,       KC_X,       KC_C,           KC_V,                   KC_B,          KC_PGDN,      KC_END       , KC_N      , KC_M          , KC_COMMA  , KC_DOT    , KC_SLASH  , SFT_T(KC_QUOTE),
+       XXXXXXX,    XXXXXXX,    KC_LALT,    KC_LGUI,          MO(2),                                                                           MO(1)         , KC_RGUI   , KC_RALT   , XXXXXXX   , XXXXXXX        ,
 
                                                                     LGUI(LSFT(LCTL(KC_4))), LGUI(LSFT(KC_4)),      KC__VOLDOWN  , KC__VOLUP ,
                                                                                             LGUI(LSFT(KC_5)),      KC_AUDIO_MUTE,
-                                                    LT(3,KC_SPACE),          LCTL(KC_LALT), LCTL(LGUI(KC_Q)),      KC_MPLY      , TG(4)     , LT(3,KC_SPACE)
+                                                    LT(3,KC_SPACE),              KC_LSHIFT,    LCTL(KC_LALT),      KC_MPLY      , TG(4)     , LT(3,KC_SPACE)
 ),
 
 [1] = LAYOUT_ergodox_pretty(
@@ -81,11 +83,11 @@ XXXXXXX, XXXXXXX, _______, _______, XXXXXXX,                                    
 ),
 
 [3] = LAYOUT_ergodox_pretty(
-_______, _______, _______,            _______,       _______,       _______, _______,      _______, _______, _______      , _______       , _______       , _______, _______,
-_______, _______, _______, LCTL(RSFT(KC_TAB)),  LCTL(KC_TAB),       _______, _______,      _______, _______, LALT(KC_LEFT), LALT(KC_RIGHT), RGUI(KC_SPACE), _______, _______,
-_______, _______, _______,            _______, LGUI(KC_RBRC),       _______,                        KC_LEFT, KC_DOWN      , KC_UP         , KC_RGHT       , XXXXXXX, _______,
-_______, _______, _______,            _______,       _______, LGUI(KC_LBRC), _______,      _______, XXXXXXX, XXXXXXX      , XXXXXXX       , XXXXXXX       , XXXXXXX, XXXXXXX,
-XXXXXXX, XXXXXXX, _______,            _______,       XXXXXXX,                                                XXXXXXX      , _______       , XXXXXXX       , XXXXXXX, RESET  ,
+_______, _______, _______,            _______,       _______,       _______, _______,      _______, _______, _______      , _______       , _______       , _______, _______         ,
+_______, _______, _______, LCTL(RSFT(KC_TAB)),  LCTL(KC_TAB),       _______, _______,      _______, _______, LALT(KC_LEFT), LALT(KC_RIGHT), RGUI(KC_SPACE), _______, _______         ,
+_______, _______, _______,            _______, LGUI(KC_RBRC),       _______,                        KC_LEFT, KC_DOWN      , KC_UP         , KC_RGHT       , XXXXXXX, _______         ,
+_______, _______, _______,            _______,       _______, LGUI(KC_LBRC), _______,      _______, XXXXXXX, XXXXXXX      , XXXXXXX       , XXXXXXX       , XXXXXXX, XXXXXXX         ,
+  RESET, XXXXXXX, _______,            _______,       XXXXXXX,                                                XXXXXXX      , _______       , XXXXXXX       , XXXXXXX, LCTL(LGUI(KC_Q)),
 
                                                                     _______, _______,      _______, _______,
                                                                              _______,      _______,
@@ -93,11 +95,11 @@ XXXXXXX, XXXXXXX, _______,            _______,       XXXXXXX,                   
 ),
 
 [4] = LAYOUT_ergodox_pretty(
-_______, _______, _______, _______, _______, _______, _______,      XXXXXXX, XXXXXXX, TG(5)  , KC_PSLS, KC_PAST  , XXXXXXX, XXXXXXX,
-_______, _______, _______, _______, _______, _______, _______,      XXXXXXX, XXXXXXX, KC_KP_7, KC_KP_8, KC_KP_9  , KC_PMNS, _______,
-_______, _______, _______, _______, _______, _______,                        XXXXXXX, KC_KP_4, KC_KP_5, KC_KP_6  , KC_PPLS, _______,
-_______, _______, _______, _______, _______, _______, _______,      XXXXXXX, XXXXXXX, KC_KP_1, KC_KP_2, KC_KP_3  , KC_PENT, XXXXXXX,
-_______, _______, _______, _______, _______,                                          KC_KP_0, XXXXXXX, KC_KP_DOT, XXXXXXX, XXXXXXX,
+_______, _______, _______, _______, _______, _______, _______,      XXXXXXX, XXXXXXX, TG(5)         , KC_PSLS, KC_PAST  , XXXXXXX, XXXXXXX,
+_______, _______, _______, _______, _______, _______, _______,      XXXXXXX, XXXXXXX, KC_KP_7       , KC_KP_8, KC_KP_9  , KC_PMNS, _______,
+_______, _______, _______, _______, _______, _______,                        XXXXXXX, KC_KP_4       , KC_KP_5, KC_KP_6  , KC_PPLS, _______,
+_______, _______, _______, _______, _______, _______, _______,      XXXXXXX, XXXXXXX, KC_KP_1       , KC_KP_2, KC_KP_3  , KC_PENT, XXXXXXX,
+_______, _______, _______, _______, _______,                                          KC_KP_0       , XXXXXXX, KC_KP_DOT, XXXXXXX, XXXXXXX,
 
                                              _______, _______,      _______, _______,
                                                       _______,      _______,
@@ -106,9 +108,9 @@ _______, _______, _______, _______, _______,                                    
 
 [5] = LAYOUT_ergodox_pretty(
 _______, _______, _______, _______, _______, _______, _______,      XXXXXXX, XXXXXXX, _______, XXXXXXX, XXXXXXX  , XXXXXXX, XXXXXXX,
-_______, _______, _______, _______, _______, _______, _______,      XXXXXXX, XXXXXXX, KC_HOME, KC_UP  , KC_PGUP  , KC_PMNS, _______,
-_______, _______, _______, _______, _______, _______,                        XXXXXXX, KC_LEFT, XXXXXXX, KC_RIGHT , KC_PPLS, _______,
-_______, _______, _______, _______, _______, _______, _______,      XXXXXXX, XXXXXXX, KC_END , KC_DOWN, KC_PGDOWN, KC_PENT, XXXXXXX,
+_______, _______, _______, _______, _______, _______, _______,      XXXXXXX, XXXXXXX, KC_HOME, XXXXXXX, KC_PGUP  , KC_PMNS, _______,
+_______, _______, _______, _______, _______, _______,                        KC_LEFT, KC_DOWN, KC_UP  , KC_RGHT , KC_PPLS, _______,
+_______, _______, _______, _______, _______, _______, _______,      XXXXXXX, XXXXXXX, KC_END , XXXXXXX, KC_PGDOWN, KC_PENT, XXXXXXX,
 _______, _______, _______, _______, _______,                                          KC_INS , XXXXXXX, KC_BSPACE, XXXXXXX, XXXXXXX,
 
                                              _______, _______,      _______, _______,
@@ -116,6 +118,9 @@ _______, _______, _______, _______, _______,                                    
                                     _______, _______, _______,      _______, _______, _______
 )
 };
+
+
+
 
 
 
